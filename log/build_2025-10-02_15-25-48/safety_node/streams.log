@@ -1,0 +1,98 @@
+[0.249s] Invoking command in '/home/russell/sim_ws/build/safety_node': CMAKE_PREFIX_PATH=/home/russell/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy /usr/bin/cmake /home/russell/sim_ws/src/safety_node -DCMAKE_INSTALL_PREFIX=/home/russell/sim_ws/install/safety_node
+[0.837s] -- The C compiler identification is GNU 9.4.0
+[1.294s] -- The CXX compiler identification is GNU 9.4.0
+[1.337s] -- Check for working C compiler: /usr/bin/cc
+[1.454s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.458s] -- Detecting C compiler ABI info
+[1.557s] -- Detecting C compiler ABI info - done
+[1.566s] -- Detecting C compile features
+[1.568s] -- Detecting C compile features - done
+[1.574s] -- Check for working CXX compiler: /usr/bin/c++
+[1.668s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.668s] -- Detecting CXX compiler ABI info
+[1.785s] -- Detecting CXX compiler ABI info - done
+[1.792s] -- Detecting CXX compile features
+[1.792s] -- Detecting CXX compile features - done
+[1.823s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.870s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.871s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.197s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[2.353s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.387s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[2.675s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[2.714s] -- Found FastRTPS: /opt/ros/foxy/include  
+[2.886s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.020s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[3.028s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.036s] -- Looking for pthread.h
+[3.206s] -- Looking for pthread.h - found
+[3.207s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.320s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[3.321s] -- Looking for pthread_create in pthreads
+[3.470s] -- Looking for pthread_create in pthreads - not found
+[3.470s] -- Looking for pthread_create in pthread
+[3.579s] -- Looking for pthread_create in pthread - found
+[3.581s] -- Found Threads: TRUE  
+[3.855s] -- Found rclpy: 1.0.13 (/opt/ros/foxy/share/rclpy/cmake)
+[3.861s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[4.043s] -- Found ackermann_msgs: 2.0.2 (/opt/ros/foxy/share/ackermann_msgs/cmake)
+[4.122s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[4.260s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[4.387s] -- Added test 'copyright' to check source files copyright and LICENSE
+[4.390s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.391s] -- Configured cppcheck include dirs: /home/russell/sim_ws/src/safety_node/include
+[4.391s] -- Configured cppcheck exclude dirs and/or files: 
+[4.393s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[4.394s] -- Configured cpplint exclude dirs and/or files: 
+[4.396s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.399s] -- Added test 'lint_cmake' to check CMake code style
+[4.400s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[4.403s] -- Added test 'uncrustify' to check C / C++ code style
+[4.403s] -- Configured uncrustify additional arguments: 
+[4.405s] -- Added test 'xmllint' to check XML markup files
+[4.411s] -- Configuring done
+[4.421s] -- Generating done
+[4.425s] -- Build files have been written to: /home/russell/sim_ws/build/safety_node
+[4.444s] Invoked command in '/home/russell/sim_ws/build/safety_node' returned '0': CMAKE_PREFIX_PATH=/home/russell/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy /usr/bin/cmake /home/russell/sim_ws/src/safety_node -DCMAKE_INSTALL_PREFIX=/home/russell/sim_ws/install/safety_node
+[4.445s] Invoking command in '/home/russell/sim_ws/build/safety_node': CMAKE_PREFIX_PATH=/home/russell/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy /usr/bin/cmake --build /home/russell/sim_ws/build/safety_node -- -j3 -l3
+[4.492s] [35m[1mScanning dependencies of target safety_node[0m
+[5.052s] [ 50%] [32mBuilding CXX object CMakeFiles/safety_node.dir/src/safety_node.cpp.o[0m
+[6.322s] [01m[K/home/russell/sim_ws/src/safety_node/src/safety_node.cpp:[m[K In member function ‘[01m[Kvoid Safety::drive_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::ConstSharedPtr)[m[K’:
+[6.323s] [01m[K/home/russell/sim_ws/src/safety_node/src/safety_node.cpp:33:71:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[6.323s]    33 |     void drive_callback([01;35m[Kconst nav_msgs::msg::Odometry::ConstSharedPtr msg[m[K)
+[6.323s]       |                         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[6.346s] [01m[K/home/russell/sim_ws/src/safety_node/src/safety_node.cpp:[m[K In member function ‘[01m[Kvoid Safety::scan_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::ConstSharedPtr)[m[K’:
+[6.346s] [01m[K/home/russell/sim_ws/src/safety_node/src/safety_node.cpp:38:74:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kscan_msg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[6.348s]    38 | void scan_callback([01;35m[Kconst sensor_msgs::msg::LaserScan::ConstSharedPtr scan_msg[m[K)
+[6.348s]       |                    [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[6.349s] 
+[6.996s] [100%] [32m[1mLinking CXX executable safety_node[0m
+[7.360s] [100%] Built target safety_node
+[7.388s] Invoked command in '/home/russell/sim_ws/build/safety_node' returned '0': CMAKE_PREFIX_PATH=/home/russell/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy /usr/bin/cmake --build /home/russell/sim_ws/build/safety_node -- -j3 -l3
+[7.407s] Invoking command in '/home/russell/sim_ws/build/safety_node': CMAKE_PREFIX_PATH=/home/russell/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy /usr/bin/cmake --install /home/russell/sim_ws/build/safety_node
+[7.414s] -- Install configuration: ""
+[7.415s] -- Installing: /home/russell/sim_ws/install/safety_node/lib/safety_node/safety_node
+[7.417s] -- Set runtime path of "/home/russell/sim_ws/install/safety_node/lib/safety_node/safety_node" to ""
+[7.417s] -- Installing: /home/russell/sim_ws/install/safety_node/share/safety_node/environment/pythonpath.sh
+[7.418s] -- Installing: /home/russell/sim_ws/install/safety_node/share/safety_node/environment/pythonpath.dsv
+[7.421s] -- Installing: /home/russell/sim_ws/install/safety_node/lib/python3.8/site-packages/safety_node
+[7.421s] -- Installing: /home/russell/sim_ws/install/safety_node/lib/python3.8/site-packages/safety_node/__init__.py
+[7.458s] Listing '/home/russell/sim_ws/install/safety_node/lib/python3.8/site-packages/safety_node'...
+[7.458s] Compiling '/home/russell/sim_ws/install/safety_node/lib/python3.8/site-packages/safety_node/__init__.py'...
+[7.462s] -- Installing: /home/russell/sim_ws/install/safety_node/lib/safety_node/safety_node.py
+[7.466s] -- Installing: /home/russell/sim_ws/install/safety_node/share/ament_index/resource_index/package_run_dependencies/safety_node
+[7.466s] -- Installing: /home/russell/sim_ws/install/safety_node/share/ament_index/resource_index/parent_prefix_path/safety_node
+[7.468s] -- Installing: /home/russell/sim_ws/install/safety_node/share/safety_node/environment/ament_prefix_path.sh
+[7.472s] -- Installing: /home/russell/sim_ws/install/safety_node/share/safety_node/environment/ament_prefix_path.dsv
+[7.476s] -- Installing: /home/russell/sim_ws/install/safety_node/share/safety_node/environment/path.sh
+[7.477s] -- Installing: /home/russell/sim_ws/install/safety_node/share/safety_node/environment/path.dsv
+[7.477s] -- Installing: /home/russell/sim_ws/install/safety_node/share/safety_node/local_setup.bash
+[7.477s] -- Installing: /home/russell/sim_ws/install/safety_node/share/safety_node/local_setup.sh
+[7.477s] -- Installing: /home/russell/sim_ws/install/safety_node/share/safety_node/local_setup.zsh
+[7.477s] -- Installing: /home/russell/sim_ws/install/safety_node/share/safety_node/local_setup.dsv
+[7.477s] -- Installing: /home/russell/sim_ws/install/safety_node/share/safety_node/package.dsv
+[7.477s] -- Installing: /home/russell/sim_ws/install/safety_node/share/ament_index/resource_index/packages/safety_node
+[7.477s] -- Installing: /home/russell/sim_ws/install/safety_node/share/safety_node/cmake/safety_nodeConfig.cmake
+[7.477s] -- Installing: /home/russell/sim_ws/install/safety_node/share/safety_node/cmake/safety_nodeConfig-version.cmake
+[7.478s] -- Installing: /home/russell/sim_ws/install/safety_node/share/safety_node/package.xml
+[7.478s] Invoked command in '/home/russell/sim_ws/build/safety_node' returned '0': CMAKE_PREFIX_PATH=/home/russell/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy /usr/bin/cmake --install /home/russell/sim_ws/build/safety_node

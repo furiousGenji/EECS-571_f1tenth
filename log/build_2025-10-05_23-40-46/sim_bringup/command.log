@@ -1,0 +1,6 @@
+Invoking command in '/home/russell/sim_ws/build/sim_bringup': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/russell/sim_ws/src/sim_bringup -DCMAKE_INSTALL_PREFIX=/home/russell/sim_ws/install/sim_bringup
+Invoked command in '/home/russell/sim_ws/build/sim_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/russell/sim_ws/src/sim_bringup -DCMAKE_INSTALL_PREFIX=/home/russell/sim_ws/install/sim_bringup
+Invoking command in '/home/russell/sim_ws/build/sim_bringup': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/russell/sim_ws/build/sim_bringup -- -j3 -l3
+Invoked command in '/home/russell/sim_ws/build/sim_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/russell/sim_ws/build/sim_bringup -- -j3 -l3
+Invoking command in '/home/russell/sim_ws/build/sim_bringup': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/russell/sim_ws/build/sim_bringup
+Invoked command in '/home/russell/sim_ws/build/sim_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/russell/sim_ws/build/sim_bringup

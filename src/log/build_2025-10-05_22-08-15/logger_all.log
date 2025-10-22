@@ -1,0 +1,324 @@
+[0.174s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.174s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fbaf62b5ac0>>, merge_install=False, metas=['./colcon.meta'], mixin=None, mixin_files=None, mixin_verb=('build',), packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=3, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fbaf62b5ac0>, verb_name='build', verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7fbaf62c5070>)
+[0.301s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.301s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.301s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.301s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.301s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.301s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.301s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/russell/sim_ws/src'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(f1tenth_gym_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(f1tenth_gym_ros) by extension 'ignore'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(f1tenth_gym_ros) by extension 'ignore_ament_install'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(f1tenth_gym_ros) by extensions ['colcon_pkg']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(f1tenth_gym_ros) by extension 'colcon_pkg'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(f1tenth_gym_ros) by extensions ['colcon_meta']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(f1tenth_gym_ros) by extension 'colcon_meta'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(f1tenth_gym_ros) by extensions ['ros']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(f1tenth_gym_ros) by extension 'ros'
+[0.316s] DEBUG:colcon.colcon_core.package_identification:Package 'f1tenth_gym_ros' with type 'ros.ament_python' and name 'f1tenth_gym_ros'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(safety_node) by extensions ['ignore', 'ignore_ament_install']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(safety_node) by extension 'ignore'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(safety_node) by extension 'ignore_ament_install'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(safety_node) by extensions ['colcon_pkg']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(safety_node) by extension 'colcon_pkg'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(safety_node) by extensions ['colcon_meta']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(safety_node) by extension 'colcon_meta'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(safety_node) by extensions ['ros']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(safety_node) by extension 'ros'
+[0.318s] DEBUG:colcon.colcon_core.package_identification:Package 'safety_node' with type 'ros.ament_cmake' and name 'safety_node'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(sim_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(sim_bringup) by extension 'ignore'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(sim_bringup) by extension 'ignore_ament_install'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(sim_bringup) by extensions ['colcon_pkg']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(sim_bringup) by extension 'colcon_pkg'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(sim_bringup) by extensions ['colcon_meta']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(sim_bringup) by extension 'colcon_meta'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(sim_bringup) by extensions ['ros']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(sim_bringup) by extension 'ros'
+[0.320s] DEBUG:colcon.colcon_core.package_identification:Package 'sim_bringup' with type 'ros.ament_cmake' and name 'sim_bringup'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(wall_follow) by extensions ['ignore', 'ignore_ament_install']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(wall_follow) by extension 'ignore'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(wall_follow) by extension 'ignore_ament_install'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(wall_follow) by extensions ['colcon_pkg']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(wall_follow) by extension 'colcon_pkg'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(wall_follow) by extensions ['colcon_meta']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(wall_follow) by extension 'colcon_meta'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(wall_follow) by extensions ['ros']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(wall_follow) by extension 'ros'
+[0.321s] DEBUG:colcon.colcon_core.package_identification:Package 'wall_follow' with type 'ros.ament_cmake' and name 'wall_follow'
+[0.321s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.321s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.322s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.322s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.322s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.336s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.336s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.338s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 293 installed packages in /opt/ros/foxy
+[0.348s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'f1tenth_gym_ros' build argument 'cmake_args' from command line to 'None'
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'f1tenth_gym_ros' build argument 'cmake_target' from command line to 'None'
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'f1tenth_gym_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'f1tenth_gym_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'f1tenth_gym_ros' build argument 'cmake_clean_first' from command line to 'False'
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'f1tenth_gym_ros' build argument 'cmake_force_configure' from command line to 'False'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'f1tenth_gym_ros' build argument 'ament_cmake_args' from command line to 'None'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'f1tenth_gym_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'f1tenth_gym_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.397s] DEBUG:colcon.colcon_core.verb:Building package 'f1tenth_gym_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/russell/sim_ws/src/build/f1tenth_gym_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/russell/sim_ws/src/install/f1tenth_gym_ros', 'merge_install': False, 'path': '/home/russell/sim_ws/src/f1tenth_gym_ros', 'symlink_install': False, 'test_result_base': None}
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'safety_node' build argument 'cmake_args' from command line to 'None'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'safety_node' build argument 'cmake_target' from command line to 'None'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'safety_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'safety_node' build argument 'cmake_clean_cache' from command line to 'False'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'safety_node' build argument 'cmake_clean_first' from command line to 'False'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'safety_node' build argument 'cmake_force_configure' from command line to 'False'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'safety_node' build argument 'ament_cmake_args' from command line to 'None'
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'safety_node' build argument 'catkin_cmake_args' from command line to 'None'
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'safety_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.398s] DEBUG:colcon.colcon_core.verb:Building package 'safety_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/russell/sim_ws/src/build/safety_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/russell/sim_ws/src/install/safety_node', 'merge_install': False, 'path': '/home/russell/sim_ws/src/safety_node', 'symlink_install': False, 'test_result_base': None}
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'sim_bringup' build argument 'cmake_args' from command line to 'None'
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'sim_bringup' build argument 'cmake_target' from command line to 'None'
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'sim_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'sim_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'sim_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'sim_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'sim_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'sim_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'sim_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.399s] DEBUG:colcon.colcon_core.verb:Building package 'sim_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/russell/sim_ws/src/build/sim_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/russell/sim_ws/src/install/sim_bringup', 'merge_install': False, 'path': '/home/russell/sim_ws/src/sim_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'wall_follow' build argument 'cmake_args' from command line to 'None'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'wall_follow' build argument 'cmake_target' from command line to 'None'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'wall_follow' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'wall_follow' build argument 'cmake_clean_cache' from command line to 'False'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'wall_follow' build argument 'cmake_clean_first' from command line to 'False'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'wall_follow' build argument 'cmake_force_configure' from command line to 'False'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'wall_follow' build argument 'ament_cmake_args' from command line to 'None'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'wall_follow' build argument 'catkin_cmake_args' from command line to 'None'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'wall_follow' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.400s] DEBUG:colcon.colcon_core.verb:Building package 'wall_follow' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/russell/sim_ws/src/build/wall_follow', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/russell/sim_ws/src/install/wall_follow', 'merge_install': False, 'path': '/home/russell/sim_ws/src/wall_follow', 'symlink_install': False, 'test_result_base': None}
+[0.400s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.401s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.402s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/russell/sim_ws/src/f1tenth_gym_ros' with build type 'ament_python'
+[0.402s] Level 1:colcon.colcon_core.shell:create_environment_hook('f1tenth_gym_ros', 'ament_prefix_path')
+[0.405s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.405s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/russell/sim_ws/src/install/f1tenth_gym_ros/share/f1tenth_gym_ros/hook/ament_prefix_path.ps1'
+[0.406s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/russell/sim_ws/src/install/f1tenth_gym_ros/share/f1tenth_gym_ros/hook/ament_prefix_path.dsv'
+[0.407s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/russell/sim_ws/src/install/f1tenth_gym_ros/share/f1tenth_gym_ros/hook/ament_prefix_path.sh'
+[0.408s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.408s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.413s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/russell/sim_ws/src/safety_node' with build type 'ament_cmake'
+[0.413s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/russell/sim_ws/src/safety_node'
+[0.414s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.414s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.420s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/russell/sim_ws/src/sim_bringup' with build type 'ament_cmake'
+[0.420s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/russell/sim_ws/src/sim_bringup'
+[0.421s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.421s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.656s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/russell/sim_ws/src/f1tenth_gym_ros'
+[0.657s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.657s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.667s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/russell/sim_ws/src/build/safety_node': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/russell/sim_ws/src/safety_node -DCMAKE_INSTALL_PREFIX=/home/russell/sim_ws/src/install/safety_node
+[0.677s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/russell/sim_ws/src/build/sim_bringup': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/russell/sim_ws/src/sim_bringup -DCMAKE_INSTALL_PREFIX=/home/russell/sim_ws/src/install/sim_bringup
+[1.324s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/russell/sim_ws/src/f1tenth_gym_ros': PYTHONPATH=/home/russell/sim_ws/src/build/f1tenth_gym_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/russell/sim_ws/src/install/f1tenth_gym_ros/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/f1tenth_gym_ros build --build-base /home/russell/sim_ws/src/build/f1tenth_gym_ros/build install --record /home/russell/sim_ws/src/build/f1tenth_gym_ros/install.log --single-version-externally-managed install_data
+[1.610s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/f1tenth_gym_ros' for CMake module files
+[1.610s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/f1tenth_gym_ros' for CMake config files
+[1.611s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/russell/sim_ws/src/f1tenth_gym_ros' returned '0': PYTHONPATH=/home/russell/sim_ws/src/build/f1tenth_gym_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/russell/sim_ws/src/install/f1tenth_gym_ros/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/f1tenth_gym_ros build --build-base /home/russell/sim_ws/src/build/f1tenth_gym_ros/build install --record /home/russell/sim_ws/src/build/f1tenth_gym_ros/install.log --single-version-externally-managed install_data
+[1.612s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/f1tenth_gym_ros/lib'
+[1.612s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/f1tenth_gym_ros/bin'
+[1.612s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/f1tenth_gym_ros/lib/pkgconfig/f1tenth_gym_ros.pc'
+[1.613s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/f1tenth_gym_ros/lib/python3.8/site-packages'
+[1.613s] Level 1:colcon.colcon_core.shell:create_environment_hook('f1tenth_gym_ros', 'pythonpath')
+[1.613s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/russell/sim_ws/src/install/f1tenth_gym_ros/share/f1tenth_gym_ros/hook/pythonpath.ps1'
+[1.614s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/russell/sim_ws/src/install/f1tenth_gym_ros/share/f1tenth_gym_ros/hook/pythonpath.dsv'
+[1.614s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/russell/sim_ws/src/install/f1tenth_gym_ros/share/f1tenth_gym_ros/hook/pythonpath.sh'
+[1.615s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/f1tenth_gym_ros/bin'
+[1.615s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(f1tenth_gym_ros)
+[1.615s] INFO:colcon.colcon_core.shell:Creating package script '/home/russell/sim_ws/src/install/f1tenth_gym_ros/share/f1tenth_gym_ros/package.ps1'
+[1.616s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/russell/sim_ws/src/install/f1tenth_gym_ros/share/f1tenth_gym_ros/package.dsv'
+[1.617s] INFO:colcon.colcon_core.shell:Creating package script '/home/russell/sim_ws/src/install/f1tenth_gym_ros/share/f1tenth_gym_ros/package.sh'
+[1.618s] INFO:colcon.colcon_core.shell:Creating package script '/home/russell/sim_ws/src/install/f1tenth_gym_ros/share/f1tenth_gym_ros/package.bash'
+[1.618s] INFO:colcon.colcon_core.shell:Creating package script '/home/russell/sim_ws/src/install/f1tenth_gym_ros/share/f1tenth_gym_ros/package.zsh'
+[1.619s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/russell/sim_ws/src/install/f1tenth_gym_ros/share/colcon-core/packages/f1tenth_gym_ros)
+[1.622s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/russell/sim_ws/src/wall_follow' with build type 'ament_cmake'
+[1.622s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/russell/sim_ws/src/wall_follow'
+[1.623s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.623s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.638s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/russell/sim_ws/src/build/wall_follow': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/russell/sim_ws/src/wall_follow -DCMAKE_INSTALL_PREFIX=/home/russell/sim_ws/src/install/wall_follow
+[2.469s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/russell/sim_ws/src/build/sim_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/russell/sim_ws/src/sim_bringup -DCMAKE_INSTALL_PREFIX=/home/russell/sim_ws/src/install/sim_bringup
+[2.469s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/russell/sim_ws/src/build/sim_bringup': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/russell/sim_ws/src/build/sim_bringup -- -j3 -l3
+[2.540s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/russell/sim_ws/src/build/sim_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/russell/sim_ws/src/build/sim_bringup -- -j3 -l3
+[2.562s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/russell/sim_ws/src/build/sim_bringup': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/russell/sim_ws/src/build/sim_bringup
+[2.595s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sim_bringup)
+[2.595s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/sim_bringup' for CMake module files
+[2.596s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/sim_bringup' for CMake config files
+[2.596s] Level 1:colcon.colcon_core.shell:create_environment_hook('sim_bringup', 'cmake_prefix_path')
+[2.597s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/russell/sim_ws/src/install/sim_bringup/share/sim_bringup/hook/cmake_prefix_path.ps1'
+[2.598s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/russell/sim_ws/src/install/sim_bringup/share/sim_bringup/hook/cmake_prefix_path.dsv'
+[2.598s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/russell/sim_ws/src/install/sim_bringup/share/sim_bringup/hook/cmake_prefix_path.sh'
+[2.600s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/sim_bringup/bin'
+[2.600s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/sim_bringup/lib/pkgconfig/sim_bringup.pc'
+[2.600s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/sim_bringup/lib/python3.8/site-packages'
+[2.601s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/sim_bringup/bin'
+[2.601s] INFO:colcon.colcon_core.shell:Creating package script '/home/russell/sim_ws/src/install/sim_bringup/share/sim_bringup/package.ps1'
+[2.602s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/russell/sim_ws/src/install/sim_bringup/share/sim_bringup/package.dsv'
+[2.603s] INFO:colcon.colcon_core.shell:Creating package script '/home/russell/sim_ws/src/install/sim_bringup/share/sim_bringup/package.sh'
+[2.604s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/russell/sim_ws/src/build/sim_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/russell/sim_ws/src/build/sim_bringup
+[2.604s] INFO:colcon.colcon_core.shell:Creating package script '/home/russell/sim_ws/src/install/sim_bringup/share/sim_bringup/package.bash'
+[2.605s] INFO:colcon.colcon_core.shell:Creating package script '/home/russell/sim_ws/src/install/sim_bringup/share/sim_bringup/package.zsh'
+[2.605s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/russell/sim_ws/src/install/sim_bringup/share/colcon-core/packages/sim_bringup)
+[2.607s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sim_bringup)
+[2.607s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/sim_bringup' for CMake module files
+[2.608s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/sim_bringup' for CMake config files
+[2.608s] Level 1:colcon.colcon_core.shell:create_environment_hook('sim_bringup', 'cmake_prefix_path')
+[2.608s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/russell/sim_ws/src/install/sim_bringup/share/sim_bringup/hook/cmake_prefix_path.ps1'
+[2.609s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/russell/sim_ws/src/install/sim_bringup/share/sim_bringup/hook/cmake_prefix_path.dsv'
+[2.610s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/russell/sim_ws/src/install/sim_bringup/share/sim_bringup/hook/cmake_prefix_path.sh'
+[2.610s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/sim_bringup/bin'
+[2.610s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/sim_bringup/lib/pkgconfig/sim_bringup.pc'
+[2.611s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/sim_bringup/lib/python3.8/site-packages'
+[2.611s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/sim_bringup/bin'
+[2.611s] INFO:colcon.colcon_core.shell:Creating package script '/home/russell/sim_ws/src/install/sim_bringup/share/sim_bringup/package.ps1'
+[2.614s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/russell/sim_ws/src/install/sim_bringup/share/sim_bringup/package.dsv'
+[2.615s] INFO:colcon.colcon_core.shell:Creating package script '/home/russell/sim_ws/src/install/sim_bringup/share/sim_bringup/package.sh'
+[2.616s] INFO:colcon.colcon_core.shell:Creating package script '/home/russell/sim_ws/src/install/sim_bringup/share/sim_bringup/package.bash'
+[2.617s] INFO:colcon.colcon_core.shell:Creating package script '/home/russell/sim_ws/src/install/sim_bringup/share/sim_bringup/package.zsh'
+[2.618s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/russell/sim_ws/src/install/sim_bringup/share/colcon-core/packages/sim_bringup)
+[4.034s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/russell/sim_ws/src/build/wall_follow' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/russell/sim_ws/src/wall_follow -DCMAKE_INSTALL_PREFIX=/home/russell/sim_ws/src/install/wall_follow
+[4.035s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/russell/sim_ws/src/build/wall_follow': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/russell/sim_ws/src/build/wall_follow -- -j3 -l3
+[4.056s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/russell/sim_ws/src/build/safety_node' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/russell/sim_ws/src/safety_node -DCMAKE_INSTALL_PREFIX=/home/russell/sim_ws/src/install/safety_node
+[4.057s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/russell/sim_ws/src/build/safety_node': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/russell/sim_ws/src/build/safety_node -- -j3 -l3
+[6.378s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/russell/sim_ws/src/build/safety_node' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/russell/sim_ws/src/build/safety_node -- -j3 -l3
+[6.379s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/russell/sim_ws/src/build/safety_node': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/russell/sim_ws/src/build/safety_node
+[6.387s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/russell/sim_ws/src/build/wall_follow' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/russell/sim_ws/src/build/wall_follow -- -j3 -l3
+[6.388s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/russell/sim_ws/src/build/wall_follow': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/russell/sim_ws/src/build/wall_follow
+[6.445s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(wall_follow)
+[6.446s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/wall_follow' for CMake module files
+[6.447s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/wall_follow' for CMake config files
+[6.450s] Level 1:colcon.colcon_core.shell:create_environment_hook('wall_follow', 'cmake_prefix_path')
+[6.450s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/russell/sim_ws/src/install/wall_follow/share/wall_follow/hook/cmake_prefix_path.ps1'
+[6.452s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/russell/sim_ws/src/install/wall_follow/share/wall_follow/hook/cmake_prefix_path.dsv'
+[6.452s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/russell/sim_ws/src/install/wall_follow/share/wall_follow/hook/cmake_prefix_path.sh'
+[6.454s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/wall_follow/lib'
+[6.454s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/wall_follow/bin'
+[6.454s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/wall_follow/lib/pkgconfig/wall_follow.pc'
+[6.454s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/wall_follow/lib/python3.8/site-packages'
+[6.454s] Level 1:colcon.colcon_core.shell:create_environment_hook('wall_follow', 'pythonpath')
+[6.454s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/russell/sim_ws/src/install/wall_follow/share/wall_follow/hook/pythonpath.ps1'
+[6.456s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/russell/sim_ws/src/install/wall_follow/share/wall_follow/hook/pythonpath.dsv'
+[6.457s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/russell/sim_ws/src/install/wall_follow/share/wall_follow/hook/pythonpath.sh'
+[6.458s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/wall_follow/bin'
+[6.458s] INFO:colcon.colcon_core.shell:Creating package script '/home/russell/sim_ws/src/install/wall_follow/share/wall_follow/package.ps1'
+[6.459s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/russell/sim_ws/src/install/wall_follow/share/wall_follow/package.dsv'
+[6.460s] INFO:colcon.colcon_core.shell:Creating package script '/home/russell/sim_ws/src/install/wall_follow/share/wall_follow/package.sh'
+[6.461s] INFO:colcon.colcon_core.shell:Creating package script '/home/russell/sim_ws/src/install/wall_follow/share/wall_follow/package.bash'
+[6.462s] INFO:colcon.colcon_core.shell:Creating package script '/home/russell/sim_ws/src/install/wall_follow/share/wall_follow/package.zsh'
+[6.462s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/russell/sim_ws/src/install/wall_follow/share/colcon-core/packages/wall_follow)
+[6.463s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(wall_follow)
+[6.463s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/wall_follow' for CMake module files
+[6.465s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/wall_follow' for CMake config files
+[6.465s] Level 1:colcon.colcon_core.shell:create_environment_hook('wall_follow', 'cmake_prefix_path')
+[6.465s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/russell/sim_ws/src/install/wall_follow/share/wall_follow/hook/cmake_prefix_path.ps1'
+[6.466s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/russell/sim_ws/src/install/wall_follow/share/wall_follow/hook/cmake_prefix_path.dsv'
+[6.467s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/russell/sim_ws/src/install/wall_follow/share/wall_follow/hook/cmake_prefix_path.sh'
+[6.468s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/wall_follow/lib'
+[6.468s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/wall_follow/bin'
+[6.468s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/wall_follow/lib/pkgconfig/wall_follow.pc'
+[6.468s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/wall_follow/lib/python3.8/site-packages'
+[6.468s] Level 1:colcon.colcon_core.shell:create_environment_hook('wall_follow', 'pythonpath')
+[6.469s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/russell/sim_ws/src/install/wall_follow/share/wall_follow/hook/pythonpath.ps1'
+[6.469s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/russell/sim_ws/src/install/wall_follow/share/wall_follow/hook/pythonpath.dsv'
+[6.470s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/russell/sim_ws/src/install/wall_follow/share/wall_follow/hook/pythonpath.sh'
+[6.470s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/wall_follow/bin'
+[6.471s] INFO:colcon.colcon_core.shell:Creating package script '/home/russell/sim_ws/src/install/wall_follow/share/wall_follow/package.ps1'
+[6.472s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/russell/sim_ws/src/install/wall_follow/share/wall_follow/package.dsv'
+[6.472s] INFO:colcon.colcon_core.shell:Creating package script '/home/russell/sim_ws/src/install/wall_follow/share/wall_follow/package.sh'
+[6.473s] INFO:colcon.colcon_core.shell:Creating package script '/home/russell/sim_ws/src/install/wall_follow/share/wall_follow/package.bash'
+[6.476s] INFO:colcon.colcon_core.shell:Creating package script '/home/russell/sim_ws/src/install/wall_follow/share/wall_follow/package.zsh'
+[6.477s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/russell/sim_ws/src/install/wall_follow/share/colcon-core/packages/wall_follow)
+[6.478s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(safety_node)
+[6.478s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/safety_node' for CMake module files
+[6.479s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/safety_node' for CMake config files
+[6.479s] Level 1:colcon.colcon_core.shell:create_environment_hook('safety_node', 'cmake_prefix_path')
+[6.479s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/russell/sim_ws/src/install/safety_node/share/safety_node/hook/cmake_prefix_path.ps1'
+[6.479s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/russell/sim_ws/src/install/safety_node/share/safety_node/hook/cmake_prefix_path.dsv'
+[6.480s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/russell/sim_ws/src/install/safety_node/share/safety_node/hook/cmake_prefix_path.sh'
+[6.481s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/safety_node/lib'
+[6.481s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/safety_node/bin'
+[6.481s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/safety_node/lib/pkgconfig/safety_node.pc'
+[6.481s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/safety_node/lib/python3.8/site-packages'
+[6.481s] Level 1:colcon.colcon_core.shell:create_environment_hook('safety_node', 'pythonpath')
+[6.482s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/russell/sim_ws/src/install/safety_node/share/safety_node/hook/pythonpath.ps1'
+[6.482s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/russell/sim_ws/src/install/safety_node/share/safety_node/hook/pythonpath.dsv'
+[6.482s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/russell/sim_ws/src/install/safety_node/share/safety_node/hook/pythonpath.sh'
+[6.483s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/safety_node/bin'
+[6.483s] INFO:colcon.colcon_core.shell:Creating package script '/home/russell/sim_ws/src/install/safety_node/share/safety_node/package.ps1'
+[6.484s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/russell/sim_ws/src/install/safety_node/share/safety_node/package.dsv'
+[6.485s] INFO:colcon.colcon_core.shell:Creating package script '/home/russell/sim_ws/src/install/safety_node/share/safety_node/package.sh'
+[6.486s] INFO:colcon.colcon_core.shell:Creating package script '/home/russell/sim_ws/src/install/safety_node/share/safety_node/package.bash'
+[6.487s] INFO:colcon.colcon_core.shell:Creating package script '/home/russell/sim_ws/src/install/safety_node/share/safety_node/package.zsh'
+[6.488s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/russell/sim_ws/src/install/safety_node/share/colcon-core/packages/safety_node)
+[6.488s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(safety_node)
+[6.488s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/safety_node' for CMake module files
+[6.489s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/safety_node' for CMake config files
+[6.489s] Level 1:colcon.colcon_core.shell:create_environment_hook('safety_node', 'cmake_prefix_path')
+[6.490s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/russell/sim_ws/src/install/safety_node/share/safety_node/hook/cmake_prefix_path.ps1'
+[6.491s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/russell/sim_ws/src/install/safety_node/share/safety_node/hook/cmake_prefix_path.dsv'
+[6.491s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/russell/sim_ws/src/build/wall_follow' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/russell/sim_ws/src/build/wall_follow
+[6.492s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/russell/sim_ws/src/install/safety_node/share/safety_node/hook/cmake_prefix_path.sh'
+[6.493s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/safety_node/lib'
+[6.493s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/safety_node/bin'
+[6.493s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/safety_node/lib/pkgconfig/safety_node.pc'
+[6.493s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/safety_node/lib/python3.8/site-packages'
+[6.493s] Level 1:colcon.colcon_core.shell:create_environment_hook('safety_node', 'pythonpath')
+[6.494s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/russell/sim_ws/src/install/safety_node/share/safety_node/hook/pythonpath.ps1'
+[6.495s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/russell/sim_ws/src/install/safety_node/share/safety_node/hook/pythonpath.dsv'
+[6.495s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/russell/sim_ws/src/install/safety_node/share/safety_node/hook/pythonpath.sh'
+[6.496s] Level 1:colcon.colcon_core.environment:checking '/home/russell/sim_ws/src/install/safety_node/bin'
+[6.496s] INFO:colcon.colcon_core.shell:Creating package script '/home/russell/sim_ws/src/install/safety_node/share/safety_node/package.ps1'
+[6.497s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/russell/sim_ws/src/build/safety_node' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/russell/sim_ws/src/build/safety_node
+[6.497s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/russell/sim_ws/src/install/safety_node/share/safety_node/package.dsv'
+[6.498s] INFO:colcon.colcon_core.shell:Creating package script '/home/russell/sim_ws/src/install/safety_node/share/safety_node/package.sh'
+[6.499s] INFO:colcon.colcon_core.shell:Creating package script '/home/russell/sim_ws/src/install/safety_node/share/safety_node/package.bash'
+[6.499s] INFO:colcon.colcon_core.shell:Creating package script '/home/russell/sim_ws/src/install/safety_node/share/safety_node/package.zsh'
+[6.500s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/russell/sim_ws/src/install/safety_node/share/colcon-core/packages/safety_node)
+[6.501s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[6.501s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[6.501s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[6.501s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[6.506s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[6.507s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[6.507s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[6.532s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[6.533s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/russell/sim_ws/src/install/local_setup.ps1'
+[6.535s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/russell/sim_ws/src/install/_local_setup_util_ps1.py'
+[6.542s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/russell/sim_ws/src/install/setup.ps1'
+[6.543s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/russell/sim_ws/src/install/local_setup.sh'
+[6.543s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/russell/sim_ws/src/install/_local_setup_util_sh.py'
+[6.544s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/russell/sim_ws/src/install/setup.sh'
+[6.545s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/russell/sim_ws/src/install/local_setup.bash'
+[6.545s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/russell/sim_ws/src/install/setup.bash'
+[6.546s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/russell/sim_ws/src/install/local_setup.zsh'
+[6.546s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/russell/sim_ws/src/install/setup.zsh'

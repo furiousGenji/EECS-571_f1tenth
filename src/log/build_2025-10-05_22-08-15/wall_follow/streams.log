@@ -1,0 +1,125 @@
+[0.014s] Invoking command in '/home/russell/sim_ws/src/build/wall_follow': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/russell/sim_ws/src/wall_follow -DCMAKE_INSTALL_PREFIX=/home/russell/sim_ws/src/install/wall_follow
+[0.165s] -- The C compiler identification is GNU 9.4.0
+[0.226s] -- The CXX compiler identification is GNU 9.4.0
+[0.230s] -- Check for working C compiler: /usr/bin/cc
+[0.331s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.332s] -- Detecting C compiler ABI info
+[0.446s] -- Detecting C compiler ABI info - done
+[0.460s] -- Detecting C compile features
+[0.462s] -- Detecting C compile features - done
+[0.470s] -- Check for working CXX compiler: /usr/bin/c++
+[0.676s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.676s] -- Detecting CXX compiler ABI info
+[0.799s] -- Detecting CXX compiler ABI info - done
+[0.808s] -- Detecting CXX compile features
+[0.809s] -- Detecting CXX compile features - done
+[0.811s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.839s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.839s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.068s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.109s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.114s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.217s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.247s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.320s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.378s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.380s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.382s] -- Looking for pthread.h
+[1.540s] -- Looking for pthread.h - found
+[1.543s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.637s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.637s] -- Looking for pthread_create in pthreads
+[1.719s] -- Looking for pthread_create in pthreads - not found
+[1.719s] -- Looking for pthread_create in pthread
+[1.794s] -- Looking for pthread_create in pthread - found
+[1.794s] -- Found Threads: TRUE  
+[2.019s] -- Found rclpy: 1.0.13 (/opt/ros/foxy/share/rclpy/cmake)
+[2.023s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[2.078s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[2.150s] -- Found ackermann_msgs: 2.0.2 (/opt/ros/foxy/share/ackermann_msgs/cmake)
+[2.195s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[2.303s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[2.364s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.364s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.364s] -- Configured cppcheck include dirs: /home/russell/sim_ws/src/wall_follow/include
+[2.364s] -- Configured cppcheck exclude dirs and/or files: 
+[2.366s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.366s] -- Configured cpplint exclude dirs and/or files: 
+[2.367s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.367s] -- Added test 'lint_cmake' to check CMake code style
+[2.368s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[2.369s] -- Added test 'uncrustify' to check C / C++ code style
+[2.369s] -- Configured uncrustify additional arguments: 
+[2.370s] -- Added test 'xmllint' to check XML markup files
+[2.376s] -- Configuring done
+[2.388s] -- Generating done
+[2.392s] -- Build files have been written to: /home/russell/sim_ws/src/build/wall_follow
+[2.410s] Invoked command in '/home/russell/sim_ws/src/build/wall_follow' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/russell/sim_ws/src/wall_follow -DCMAKE_INSTALL_PREFIX=/home/russell/sim_ws/src/install/wall_follow
+[2.411s] Invoking command in '/home/russell/sim_ws/src/build/wall_follow': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/russell/sim_ws/src/build/wall_follow -- -j3 -l3
+[2.465s] [35m[1mScanning dependencies of target wall_follow_node[0m
+[2.893s] [ 50%] [32mBuilding CXX object CMakeFiles/wall_follow_node.dir/src/wall_follow_node.cpp.o[0m
+[4.112s] [01m[K/home/russell/sim_ws/src/wall_follow/src/wall_follow_node.cpp:[m[K In member function ‘[01m[Kdouble WallFollow::get_range(float*, double)[m[K’:
+[4.112s] [01m[K/home/russell/sim_ws/src/wall_follow/src/wall_follow_node.cpp:30:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krange_data[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[4.113s]    30 |     double get_range([01;35m[Kfloat* range_data[m[K, double angle)
+[4.113s]       |                      [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[4.113s] [01m[K/home/russell/sim_ws/src/wall_follow/src/wall_follow_node.cpp:30:48:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kangle[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[4.113s]    30 |     double get_range(float* range_data, [01;35m[Kdouble angle[m[K)
+[4.113s]       |                                         [01;35m[K~~~~~~~^~~~~[m[K
+[4.113s] [01m[K/home/russell/sim_ws/src/wall_follow/src/wall_follow_node.cpp:[m[K In member function ‘[01m[Kdouble WallFollow::get_error(float*, double)[m[K’:
+[4.113s] [01m[K/home/russell/sim_ws/src/wall_follow/src/wall_follow_node.cpp:47:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krange_data[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[4.113s]    47 |     double get_error([01;35m[Kfloat* range_data[m[K, double dist)
+[4.113s]       |                      [01;35m[K~~~~~~~^~~~~~~~~~[m[K
+[4.113s] [01m[K/home/russell/sim_ws/src/wall_follow/src/wall_follow_node.cpp:47:48:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdist[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[4.113s]    47 |     double get_error(float* range_data, [01;35m[Kdouble dist[m[K)
+[4.113s]       |                                         [01;35m[K~~~~~~~^~~~[m[K
+[4.114s] [01m[K/home/russell/sim_ws/src/wall_follow/src/wall_follow_node.cpp:[m[K In member function ‘[01m[Kvoid WallFollow::pid_control(double, double)[m[K’:
+[4.114s] [01m[K/home/russell/sim_ws/src/wall_follow/src/wall_follow_node.cpp:76:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kangle[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[4.114s]    76 |         double [01;35m[Kangle[m[K = 0.0;
+[4.114s]       |                [01;35m[K^~~~~[m[K
+[4.114s] [01m[K/home/russell/sim_ws/src/wall_follow/src/wall_follow_node.cpp:64:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kerror[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[4.114s]    64 |     void pid_control([01;35m[Kdouble error[m[K, double velocity)
+[4.114s]       |                      [01;35m[K~~~~~~~^~~~~[m[K
+[4.114s] [01m[K/home/russell/sim_ws/src/wall_follow/src/wall_follow_node.cpp:64:43:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kvelocity[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[4.114s]    64 |     void pid_control(double error, [01;35m[Kdouble velocity[m[K)
+[4.114s]       |                                    [01;35m[K~~~~~~~^~~~~~~~[m[K
+[4.117s] [01m[K/home/russell/sim_ws/src/wall_follow/src/wall_follow_node.cpp:[m[K In member function ‘[01m[Kvoid WallFollow::scan_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::ConstSharedPtr)[m[K’:
+[4.117s] [01m[K/home/russell/sim_ws/src/wall_follow/src/wall_follow_node.cpp:93:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kerror[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[4.117s]    93 |         double [01;35m[Kerror[m[K = 0.0; // TODO: replace with error calculated by get_error()
+[4.117s]       |                [01;35m[K^~~~~[m[K
+[4.117s] [01m[K/home/russell/sim_ws/src/wall_follow/src/wall_follow_node.cpp:94:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kvelocity[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[4.117s]    94 |         double [01;35m[Kvelocity[m[K = 0.0; // TODO: calculate desired car velocity based on error
+[4.117s]       |                [01;35m[K^~~~~~~~[m[K
+[4.117s] [01m[K/home/russell/sim_ws/src/wall_follow/src/wall_follow_node.cpp:82:74:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kscan_msg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[4.118s]    82 | can_callback([01;35m[Kconst sensor_msgs::msg::LaserScan::ConstSharedPtr scan_msg[m[K)
+[4.118s]       |              [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[4.118s] 
+[4.554s] [100%] [32m[1mLinking CXX executable wall_follow_node[0m
+[4.747s] [100%] Built target wall_follow_node
+[4.763s] Invoked command in '/home/russell/sim_ws/src/build/wall_follow' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/russell/sim_ws/src/build/wall_follow -- -j3 -l3
+[4.764s] Invoking command in '/home/russell/sim_ws/src/build/wall_follow': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/russell/sim_ws/src/build/wall_follow
+[4.786s] -- Install configuration: ""
+[4.787s] -- Installing: /home/russell/sim_ws/src/install/wall_follow/lib/wall_follow/wall_follow_node
+[4.787s] -- Set runtime path of "/home/russell/sim_ws/src/install/wall_follow/lib/wall_follow/wall_follow_node" to ""
+[4.787s] -- Installing: /home/russell/sim_ws/src/install/wall_follow/share/wall_follow/environment/pythonpath.sh
+[4.788s] -- Installing: /home/russell/sim_ws/src/install/wall_follow/share/wall_follow/environment/pythonpath.dsv
+[4.788s] -- Installing: /home/russell/sim_ws/src/install/wall_follow/lib/python3.8/site-packages/wall_follow
+[4.788s] -- Installing: /home/russell/sim_ws/src/install/wall_follow/lib/python3.8/site-packages/wall_follow/__init__.py
+[4.809s] Listing '/home/russell/sim_ws/src/install/wall_follow/lib/python3.8/site-packages/wall_follow'...
+[4.809s] Compiling '/home/russell/sim_ws/src/install/wall_follow/lib/python3.8/site-packages/wall_follow/__init__.py'...
+[4.815s] -- Installing: /home/russell/sim_ws/src/install/wall_follow/lib/wall_follow/wall_follow_node.py
+[4.816s] -- Installing: /home/russell/sim_ws/src/install/wall_follow/share/ament_index/resource_index/package_run_dependencies/wall_follow
+[4.816s] -- Installing: /home/russell/sim_ws/src/install/wall_follow/share/ament_index/resource_index/parent_prefix_path/wall_follow
+[4.818s] -- Installing: /home/russell/sim_ws/src/install/wall_follow/share/wall_follow/environment/ament_prefix_path.sh
+[4.819s] -- Installing: /home/russell/sim_ws/src/install/wall_follow/share/wall_follow/environment/ament_prefix_path.dsv
+[4.819s] -- Installing: /home/russell/sim_ws/src/install/wall_follow/share/wall_follow/environment/path.sh
+[4.823s] -- Installing: /home/russell/sim_ws/src/install/wall_follow/share/wall_follow/environment/path.dsv
+[4.824s] -- Installing: /home/russell/sim_ws/src/install/wall_follow/share/wall_follow/local_setup.bash
+[4.824s] -- Installing: /home/russell/sim_ws/src/install/wall_follow/share/wall_follow/local_setup.sh
+[4.824s] -- Installing: /home/russell/sim_ws/src/install/wall_follow/share/wall_follow/local_setup.zsh
+[4.825s] -- Installing: /home/russell/sim_ws/src/install/wall_follow/share/wall_follow/local_setup.dsv
+[4.827s] -- Installing: /home/russell/sim_ws/src/install/wall_follow/share/wall_follow/package.dsv
+[4.828s] -- Installing: /home/russell/sim_ws/src/install/wall_follow/share/ament_index/resource_index/packages/wall_follow
+[4.831s] -- Installing: /home/russell/sim_ws/src/install/wall_follow/share/wall_follow/cmake/wall_followConfig.cmake
+[4.832s] -- Installing: /home/russell/sim_ws/src/install/wall_follow/share/wall_follow/cmake/wall_followConfig-version.cmake
+[4.834s] -- Installing: /home/russell/sim_ws/src/install/wall_follow/share/wall_follow/package.xml
+[4.866s] Invoked command in '/home/russell/sim_ws/src/build/wall_follow' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/russell/sim_ws/src/build/wall_follow

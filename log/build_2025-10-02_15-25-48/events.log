@@ -1,0 +1,191 @@
+[0.000000] (-) TimerEvent: {}
+[0.000615] (f1tenth_gym_ros) JobQueued: {'identifier': 'f1tenth_gym_ros', 'dependencies': OrderedDict()}
+[0.001537] (safety_node) JobQueued: {'identifier': 'safety_node', 'dependencies': OrderedDict()}
+[0.001758] (f1tenth_gym_ros) JobStarted: {'identifier': 'f1tenth_gym_ros'}
+[0.055571] (safety_node) JobStarted: {'identifier': 'safety_node'}
+[0.201518] (-) TimerEvent: {}
+[0.294562] (safety_node) JobProgress: {'identifier': 'safety_node', 'progress': 'cmake'}
+[0.296472] (safety_node) Command: {'cmd': ['/usr/bin/cmake', '/home/russell/sim_ws/src/safety_node', '-DCMAKE_INSTALL_PREFIX=/home/russell/sim_ws/install/safety_node'], 'cwd': '/home/russell/sim_ws/build/safety_node', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'russell'), ('SSH_AGENT_PID', '1817'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/russell'), ('OLDPWD', '/home/russell'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1603'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/russell/sim_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'russell'), ('JOURNAL_STREAM', '8:37514'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'russell'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/russell/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/russell-VirtualBox:@/tmp/.ICE-unix/1869,unix/russell-VirtualBox:/tmp/.ICE-unix/1869'), ('INVOCATION_ID', '3ffbcf53121548458783aad8de7685c7'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a1fa7959_75ff_4ff6_b142_622320acd1a7'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.82'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/russell/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/russell/sim_ws/build/safety_node'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/russell/sim_ws/install/f1tenth_gym_ros/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/russell/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy')]), 'shell': False}
+[0.305077] (-) TimerEvent: {}
+[0.406024] (-) TimerEvent: {}
+[0.508409] (-) TimerEvent: {}
+[0.610357] (-) TimerEvent: {}
+[0.711290] (-) TimerEvent: {}
+[0.812132] (-) TimerEvent: {}
+[0.892056] (safety_node) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.919527] (-) TimerEvent: {}
+[1.030339] (-) TimerEvent: {}
+[1.132545] (-) TimerEvent: {}
+[1.233429] (-) TimerEvent: {}
+[1.324074] (f1tenth_gym_ros) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/f1tenth_gym_ros', 'build', '--build-base', '/home/russell/sim_ws/build/f1tenth_gym_ros/build', 'install', '--record', '/home/russell/sim_ws/build/f1tenth_gym_ros/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/russell/sim_ws/src/f1tenth_gym_ros', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'russell', 'SSH_AGENT_PID': '1817', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/russell', 'OLDPWD': '/home/russell', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1603', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/russell/sim_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'russell', 'JOURNAL_STREAM': '8:37514', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'russell', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/foxy/bin:/home/russell/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/russell-VirtualBox:@/tmp/.ICE-unix/1869,unix/russell-VirtualBox:/tmp/.ICE-unix/1869', 'INVOCATION_ID': '3ffbcf53121548458783aad8de7685c7', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/a1fa7959_75ff_4ff6_b142_622320acd1a7', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.82', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/russell/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/russell/sim_ws/build/f1tenth_gym_ros', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/russell/sim_ws/build/f1tenth_gym_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/russell/sim_ws/install/f1tenth_gym_ros/lib/python3.8/site-packages:/home/russell/sim_ws/install/f1tenth_gym_ros/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'VTE_VERSION': '6003'}, 'shell': False}
+[1.341223] (-) TimerEvent: {}
+[1.350034] (safety_node) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[1.392009] (safety_node) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[1.441732] (-) TimerEvent: {}
+[1.509113] (safety_node) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[1.513180] (safety_node) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.540904] (f1tenth_gym_ros) StdoutLine: {'line': b'running egg_info\n'}
+[1.541863] (-) TimerEvent: {}
+[1.542209] (f1tenth_gym_ros) StdoutLine: {'line': b'writing ../../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info/PKG-INFO\n'}
+[1.543344] (f1tenth_gym_ros) StdoutLine: {'line': b'writing dependency_links to ../../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info/dependency_links.txt\n'}
+[1.544788] (f1tenth_gym_ros) StdoutLine: {'line': b'writing entry points to ../../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info/entry_points.txt\n'}
+[1.545017] (f1tenth_gym_ros) StdoutLine: {'line': b'writing requirements to ../../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info/requires.txt\n'}
+[1.545187] (f1tenth_gym_ros) StdoutLine: {'line': b'writing top-level names to ../../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info/top_level.txt\n'}
+[1.579898] (f1tenth_gym_ros) StdoutLine: {'line': b"reading manifest file '../../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info/SOURCES.txt'\n"}
+[1.583457] (f1tenth_gym_ros) StdoutLine: {'line': b"writing manifest file '../../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info/SOURCES.txt'\n"}
+[1.584154] (f1tenth_gym_ros) StdoutLine: {'line': b'running build\n'}
+[1.584317] (f1tenth_gym_ros) StdoutLine: {'line': b'running build_py\n'}
+[1.584817] (f1tenth_gym_ros) StdoutLine: {'line': b'running install\n'}
+[1.585763] (f1tenth_gym_ros) StdoutLine: {'line': b'running install_lib\n'}
+[1.587362] (f1tenth_gym_ros) StdoutLine: {'line': b'running install_data\n'}
+[1.588173] (f1tenth_gym_ros) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.590587] (f1tenth_gym_ros) StdoutLine: {'line': b"removing '/home/russell/sim_ws/install/f1tenth_gym_ros/lib/python3.8/site-packages/f1tenth_gym_ros-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[1.612923] (safety_node) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.621768] (safety_node) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.623955] (safety_node) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.629329] (safety_node) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[1.720095] (-) TimerEvent: {}
+[1.721498] (f1tenth_gym_ros) StdoutLine: {'line': b'Copying ../../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info to /home/russell/sim_ws/install/f1tenth_gym_ros/lib/python3.8/site-packages/f1tenth_gym_ros-0.0.0-py3.8.egg-info\n'}
+[1.723581] (safety_node) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[1.723720] (safety_node) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.729005] (f1tenth_gym_ros) StdoutLine: {'line': b'running install_scripts\n'}
+[1.743809] (f1tenth_gym_ros) StdoutLine: {'line': b'Installing gym_bridge script to /home/russell/sim_ws/install/f1tenth_gym_ros/lib/f1tenth_gym_ros\n'}
+[1.745431] (f1tenth_gym_ros) StdoutLine: {'line': b"writing list of installed files to '/home/russell/sim_ws/build/f1tenth_gym_ros/install.log'\n"}
+[1.765688] (f1tenth_gym_ros) CommandEnded: {'returncode': 0}
+[1.818865] (f1tenth_gym_ros) JobEnded: {'identifier': 'f1tenth_gym_ros', 'rc': 0}
+[1.820424] (-) TimerEvent: {}
+[1.840338] (safety_node) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.846934] (safety_node) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.848152] (safety_node) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.878473] (safety_node) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[1.920565] (-) TimerEvent: {}
+[1.926083] (safety_node) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[1.926259] (safety_node) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.020769] (-) TimerEvent: {}
+[2.121591] (-) TimerEvent: {}
+[2.222483] (-) TimerEvent: {}
+[2.251754] (safety_node) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[2.343721] (-) TimerEvent: {}
+[2.408580] (safety_node) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.442360] (safety_node) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[2.443877] (-) TimerEvent: {}
+[2.546506] (-) TimerEvent: {}
+[2.647744] (-) TimerEvent: {}
+[2.730065] (safety_node) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[2.748009] (-) TimerEvent: {}
+[2.769458] (safety_node) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[2.851515] (-) TimerEvent: {}
+[2.941725] (safety_node) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.954601] (-) TimerEvent: {}
+[3.060837] (-) TimerEvent: {}
+[3.075639] (safety_node) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[3.083024] (safety_node) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.091312] (safety_node) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[3.161063] (-) TimerEvent: {}
+[3.261823] (safety_node) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[3.262016] (-) TimerEvent: {}
+[3.262252] (safety_node) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[3.365862] (-) TimerEvent: {}
+[3.375882] (safety_node) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[3.376742] (safety_node) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[3.466880] (-) TimerEvent: {}
+[3.525829] (safety_node) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[3.526105] (safety_node) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[3.567465] (-) TimerEvent: {}
+[3.634352] (safety_node) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[3.636950] (safety_node) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[3.667787] (-) TimerEvent: {}
+[3.777413] (-) TimerEvent: {}
+[3.878394] (-) TimerEvent: {}
+[3.910277] (safety_node) StdoutLine: {'line': b'-- Found rclpy: 1.0.13 (/opt/ros/foxy/share/rclpy/cmake)\n'}
+[3.915979] (safety_node) StdoutLine: {'line': b'-- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)\n'}
+[3.978972] (-) TimerEvent: {}
+[4.083045] (-) TimerEvent: {}
+[4.098167] (safety_node) StdoutLine: {'line': b'-- Found ackermann_msgs: 2.0.2 (/opt/ros/foxy/share/ackermann_msgs/cmake)\n'}
+[4.177350] (safety_node) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[4.183788] (-) TimerEvent: {}
+[4.284851] (-) TimerEvent: {}
+[4.314102] (safety_node) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[4.386262] (-) TimerEvent: {}
+[4.442366] (safety_node) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[4.445472] (safety_node) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[4.446103] (safety_node) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/russell/sim_ws/src/safety_node/include\n'}
+[4.446318] (safety_node) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[4.448567] (safety_node) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[4.449205] (safety_node) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[4.451826] (safety_node) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[4.454303] (safety_node) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.456159] (safety_node) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[4.458841] (safety_node) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[4.458920] (safety_node) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[4.460845] (safety_node) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.466716] (safety_node) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.476693] (safety_node) StdoutLine: {'line': b'-- Generating done\n'}
+[4.480671] (safety_node) StdoutLine: {'line': b'-- Build files have been written to: /home/russell/sim_ws/build/safety_node\n'}
+[4.490217] (-) TimerEvent: {}
+[4.499786] (safety_node) CommandEnded: {'returncode': 0}
+[4.500356] (safety_node) JobProgress: {'identifier': 'safety_node', 'progress': 'build'}
+[4.500392] (safety_node) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/russell/sim_ws/build/safety_node', '--', '-j3', '-l3'], 'cwd': '/home/russell/sim_ws/build/safety_node', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'russell'), ('SSH_AGENT_PID', '1817'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/russell'), ('OLDPWD', '/home/russell'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1603'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/russell/sim_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'russell'), ('JOURNAL_STREAM', '8:37514'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'russell'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/russell/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/russell-VirtualBox:@/tmp/.ICE-unix/1869,unix/russell-VirtualBox:/tmp/.ICE-unix/1869'), ('INVOCATION_ID', '3ffbcf53121548458783aad8de7685c7'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a1fa7959_75ff_4ff6_b142_622320acd1a7'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.82'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/russell/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/russell/sim_ws/build/safety_node'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/russell/sim_ws/install/f1tenth_gym_ros/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/russell/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy')]), 'shell': False}
+[4.547015] (safety_node) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target safety_node\x1b[0m\n'}
+[4.590529] (-) TimerEvent: {}
+[4.691666] (-) TimerEvent: {}
+[4.792926] (-) TimerEvent: {}
+[4.895812] (-) TimerEvent: {}
+[4.996607] (-) TimerEvent: {}
+[5.103199] (-) TimerEvent: {}
+[5.106872] (safety_node) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/safety_node.dir/src/safety_node.cpp.o\x1b[0m\n'}
+[5.207217] (-) TimerEvent: {}
+[5.309019] (-) TimerEvent: {}
+[5.409939] (-) TimerEvent: {}
+[5.512870] (-) TimerEvent: {}
+[6.367009] (-) TimerEvent: {}
+[6.378064] (safety_node) StderrLine: {'line': b'\x1b[01m\x1b[K/home/russell/sim_ws/src/safety_node/src/safety_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Safety::drive_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::ConstSharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.378252] (safety_node) StderrLine: {'line': b'\x1b[01m\x1b[K/home/russell/sim_ws/src/safety_node/src/safety_node.cpp:33:71:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[6.378322] (safety_node) StderrLine: {'line': b'   33 |     void drive_callback(\x1b[01;35m\x1b[Kconst nav_msgs::msg::Odometry::ConstSharedPtr msg\x1b[m\x1b[K)\n'}
+[6.378399] (safety_node) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[6.402062] (safety_node) StderrLine: {'line': b'\x1b[01m\x1b[K/home/russell/sim_ws/src/safety_node/src/safety_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Safety::scan_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::ConstSharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.402183] (safety_node) StderrLine: {'line': b'\x1b[01m\x1b[K/home/russell/sim_ws/src/safety_node/src/safety_node.cpp:38:74:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kscan_msg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[6.404103] (safety_node) StderrLine: {'line': b'   38 | void scan_callback(\x1b[01;35m\x1b[Kconst sensor_msgs::msg::LaserScan::ConstSharedPtr scan_msg\x1b[m\x1b[K)\n'}
+[6.404209] (safety_node) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[6.404257] (safety_node) StderrLine: {'line': b'\n'}
+[6.488665] (-) TimerEvent: {}
+[6.856108] (-) TimerEvent: {}
+[6.985896] (-) TimerEvent: {}
+[7.051394] (safety_node) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable safety_node\x1b[0m\n'}
+[7.087091] (-) TimerEvent: {}
+[7.188374] (-) TimerEvent: {}
+[7.290921] (-) TimerEvent: {}
+[7.394904] (-) TimerEvent: {}
+[7.415482] (safety_node) StdoutLine: {'line': b'[100%] Built target safety_node\n'}
+[7.442665] (safety_node) CommandEnded: {'returncode': 0}
+[7.444779] (safety_node) JobProgress: {'identifier': 'safety_node', 'progress': 'install'}
+[7.461984] (safety_node) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/russell/sim_ws/build/safety_node'], 'cwd': '/home/russell/sim_ws/build/safety_node', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'russell'), ('SSH_AGENT_PID', '1817'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/russell'), ('OLDPWD', '/home/russell'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1603'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/russell/sim_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'russell'), ('JOURNAL_STREAM', '8:37514'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'russell'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/russell/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/russell-VirtualBox:@/tmp/.ICE-unix/1869,unix/russell-VirtualBox:/tmp/.ICE-unix/1869'), ('INVOCATION_ID', '3ffbcf53121548458783aad8de7685c7'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a1fa7959_75ff_4ff6_b142_622320acd1a7'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.82'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/russell/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/russell/sim_ws/build/safety_node'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/russell/sim_ws/install/f1tenth_gym_ros/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/russell/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy')]), 'shell': False}
+[7.469773] (safety_node) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.470451] (safety_node) StdoutLine: {'line': b'-- Installing: /home/russell/sim_ws/install/safety_node/lib/safety_node/safety_node\n'}
+[7.472265] (safety_node) StdoutLine: {'line': b'-- Set runtime path of "/home/russell/sim_ws/install/safety_node/lib/safety_node/safety_node" to ""\n'}
+[7.472824] (safety_node) StdoutLine: {'line': b'-- Installing: /home/russell/sim_ws/install/safety_node/share/safety_node/environment/pythonpath.sh\n'}
+[7.473595] (safety_node) StdoutLine: {'line': b'-- Installing: /home/russell/sim_ws/install/safety_node/share/safety_node/environment/pythonpath.dsv\n'}
+[7.475921] (safety_node) StdoutLine: {'line': b'-- Installing: /home/russell/sim_ws/install/safety_node/lib/python3.8/site-packages/safety_node\n'}
+[7.476452] (safety_node) StdoutLine: {'line': b'-- Installing: /home/russell/sim_ws/install/safety_node/lib/python3.8/site-packages/safety_node/__init__.py\n'}
+[7.497686] (-) TimerEvent: {}
+[7.513038] (safety_node) StdoutLine: {'line': b"Listing '/home/russell/sim_ws/install/safety_node/lib/python3.8/site-packages/safety_node'...\n"}
+[7.513663] (safety_node) StdoutLine: {'line': b"Compiling '/home/russell/sim_ws/install/safety_node/lib/python3.8/site-packages/safety_node/__init__.py'...\n"}
+[7.516555] (safety_node) StdoutLine: {'line': b'-- Installing: /home/russell/sim_ws/install/safety_node/lib/safety_node/safety_node.py\n'}
+[7.520744] (safety_node) StdoutLine: {'line': b'-- Installing: /home/russell/sim_ws/install/safety_node/share/ament_index/resource_index/package_run_dependencies/safety_node\n'}
+[7.521457] (safety_node) StdoutLine: {'line': b'-- Installing: /home/russell/sim_ws/install/safety_node/share/ament_index/resource_index/parent_prefix_path/safety_node\n'}
+[7.522264] (safety_node) StdoutLine: {'line': b'-- Installing: /home/russell/sim_ws/install/safety_node/share/safety_node/environment/ament_prefix_path.sh\n'}
+[7.523692] (safety_node) StdoutLine: {'line': b'-- Installing: /home/russell/sim_ws/install/safety_node/share/safety_node/environment/ament_prefix_path.dsv\n'}
+[7.532180] (safety_node) StdoutLine: {'line': b'-- Installing: /home/russell/sim_ws/install/safety_node/share/safety_node/environment/path.sh\n'}
+[7.532268] (safety_node) StdoutLine: {'line': b'-- Installing: /home/russell/sim_ws/install/safety_node/share/safety_node/environment/path.dsv\n'}
+[7.532314] (safety_node) StdoutLine: {'line': b'-- Installing: /home/russell/sim_ws/install/safety_node/share/safety_node/local_setup.bash\n'}
+[7.532382] (safety_node) StdoutLine: {'line': b'-- Installing: /home/russell/sim_ws/install/safety_node/share/safety_node/local_setup.sh\n'}
+[7.532540] (safety_node) StdoutLine: {'line': b'-- Installing: /home/russell/sim_ws/install/safety_node/share/safety_node/local_setup.zsh\n'}
+[7.532801] (safety_node) StdoutLine: {'line': b'-- Installing: /home/russell/sim_ws/install/safety_node/share/safety_node/local_setup.dsv\n'}
+[7.532966] (safety_node) StdoutLine: {'line': b'-- Installing: /home/russell/sim_ws/install/safety_node/share/safety_node/package.dsv\n'}
+[7.533013] (safety_node) StdoutLine: {'line': b'-- Installing: /home/russell/sim_ws/install/safety_node/share/ament_index/resource_index/packages/safety_node\n'}
+[7.533072] (safety_node) StdoutLine: {'line': b'-- Installing: /home/russell/sim_ws/install/safety_node/share/safety_node/cmake/safety_nodeConfig.cmake\n'}
+[7.533178] (safety_node) StdoutLine: {'line': b'-- Installing: /home/russell/sim_ws/install/safety_node/share/safety_node/cmake/safety_nodeConfig-version.cmake\n'}
+[7.533233] (safety_node) StdoutLine: {'line': b'-- Installing: /home/russell/sim_ws/install/safety_node/share/safety_node/package.xml\n'}
+[7.533391] (safety_node) CommandEnded: {'returncode': 0}
+[7.559861] (safety_node) JobEnded: {'identifier': 'safety_node', 'rc': 0}
+[7.562891] (-) EventReactorShutdown: {}
