@@ -25,16 +25,16 @@ class ReactiveFollowGap(Node):
 
         self.max_range_clip = 8.0
         self.movavg_window = 5
-        self.bubble_points = 12 
+        self.bubble_points = 40 #40 
 
         self.speed_lo = 0.8
         self.speed_md = 1.2
         self.speed_hi = 1.8
         self.small_turn_deg = 10.0
         self.mid_turn_deg = 20.0
+        self.max_steer = math.radians(90)
         self.fov = 180.0
         self.fov_min_id = 0.0
-        self.extend_bubble_radius = 30
 
 
     def preprocess_lidar(self, ranges, angle_min, angle_max, angle_increment):
@@ -42,7 +42,6 @@ class ReactiveFollowGap(Node):
             1.Setting each value to the mean over some window
             2.Rejecting high values (eg. > 3m)
         """
-        # proc_ranges = ranges
         arr = np.array(ranges)
 
         # i=0
@@ -59,7 +58,7 @@ class ReactiveFollowGap(Node):
         arr = arr[fov_min_id:fov_max_id]
         # self.get_logger().info(f"fov_min_id={fov_min_id}, fov_max_id={fov_max_id}, len={len(ranges)}")
 
-        #Rejecting high values (eg. > 3m)
+        #Rejecting high values
         np.clip(arr, 0.0, self.max_range_clip, out=arr)
 
         # i=0
@@ -123,9 +122,6 @@ class ReactiveFollowGap(Node):
         """
         segment = ranges[start_i:end_i + 1]
 
-        # local_idx = int(np.argmax(segment))
-        # return start_i + local_idx
-
         if segment.size == 0:
             return (start_i + end_i) // 2
 
@@ -138,13 +134,6 @@ class ReactiveFollowGap(Node):
         score = segment * w
         local_idx = int(np.argmax(score))
         return start_i + local_idx
-
-    def extend_bubble(self, arr, start_i, end_i):
-
-        left = max(0, start_i - self.extend_bubble_radius)
-        right = min(len(arr) - 1, end_i + self.extend_bubble_radius)
-        arr[left:right + 1] = 0.0
-        return arr
 
 
     def lidar_callback(self, data):
@@ -163,7 +152,7 @@ class ReactiveFollowGap(Node):
         # self.get_logger().info(f"closest_point={closest_idx},closest_dist = {closest_dist}")
 
         #2. Eliminate all points inside 'bubble' (set them to zero) 
-        bubble = int(self.bubble_points + max(0, (1.0 / max(closest_dist, 0.3)) * 6))
+        bubble = int(self.bubble_points + max(0, (1.0 / max(closest_dist, 0.3)) * 6)) # Extend the bubble range as car is getting closer to the obstacle
         left = max(0, closest_idx - bubble)
         right = min(proc_ranges.size - 1, closest_idx + bubble)
 
@@ -171,10 +160,6 @@ class ReactiveFollowGap(Node):
 
         free_space = proc_ranges.copy()
         free_space[left:right + 1] = 0.0 
-
-        #Extend the bubble range
-        free_space = self.extend_bubble(free_space, left, right)
-        
 
         # i=0
         # for val in free_space:
@@ -187,17 +172,15 @@ class ReactiveFollowGap(Node):
         #4. Find the best point in the gap 
         best_idx = self.find_best_point(gap_start, gap_end, free_space)
 
-        # steer = best_idx * data.angle_increment - math.radians(self.fov / 2)
         steer = data.angle_min + (self.fov_min_id + best_idx) * data.angle_increment
 
-        max_steer = math.radians(60)
-        steer = float(np.clip(steer, -max_steer, max_steer))
+        steer = float(np.clip(steer, -self.max_steer, self.max_steer))
 
         #Publish Drive message
         steer_deg = math.degrees(steer)
 
         # self.get_logger().info(f"Central range={data.ranges[540]:+.1f}")
-        self.get_logger().info(f"closest_idx={closest_idx}, best_idx={best_idx}, best_range={data.ranges[best_idx + self.fov_min_id]}, steer={math.degrees(steer):+.1f}°\n")
+        # self.get_logger().info(f"closest_dist={closest_dist:+.1f}, best_idx={best_idx}, best_range={data.ranges[best_idx + self.fov_min_id]}, steer={math.degrees(steer):+.1f}°\n")
 
         if steer_deg < self.small_turn_deg:
             speed = self.speed_hi
@@ -205,6 +188,8 @@ class ReactiveFollowGap(Node):
             speed = self.speed_md
         else:
             speed = self.speed_lo
+
+        # self.get_logger().info(f"speed={speed}\n")
         
         self.publish_drive(steer, speed)
 
