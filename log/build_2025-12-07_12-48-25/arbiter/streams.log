@@ -1,0 +1,24 @@
+[1.354s] Invoking command in '/home/russell/sim_ws/src/arbiter': PYTHONPATH=/home/russell/sim_ws/build/arbiter/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/russell/sim_ws/install/arbiter/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/arbiter build --build-base /home/russell/sim_ws/build/arbiter/build install --record /home/russell/sim_ws/build/arbiter/install.log --install-scripts $base/lib/arbiter --single-version-externally-managed install_data
+[1.542s] running egg_info
+[1.545s] writing ../../build/arbiter/arbiter.egg-info/PKG-INFO
+[1.545s] writing dependency_links to ../../build/arbiter/arbiter.egg-info/dependency_links.txt
+[1.545s] writing entry points to ../../build/arbiter/arbiter.egg-info/entry_points.txt
+[1.545s] writing requirements to ../../build/arbiter/arbiter.egg-info/requires.txt
+[1.545s] writing top-level names to ../../build/arbiter/arbiter.egg-info/top_level.txt
+[1.593s] reading manifest file '../../build/arbiter/arbiter.egg-info/SOURCES.txt'
+[1.594s] writing manifest file '../../build/arbiter/arbiter.egg-info/SOURCES.txt'
+[1.594s] running build
+[1.594s] running build_py
+[1.594s] copying arbiter/arb_node.py -> /home/russell/sim_ws/build/arbiter/build/lib/arbiter
+[1.594s] running install
+[1.594s] running install_lib
+[1.594s] copying /home/russell/sim_ws/build/arbiter/build/lib/arbiter/arb_node.py -> /home/russell/sim_ws/install/arbiter/lib/python3.8/site-packages/arbiter
+[1.594s] byte-compiling /home/russell/sim_ws/install/arbiter/lib/python3.8/site-packages/arbiter/arb_node.py to arb_node.cpython-38.pyc
+[1.601s] running install_data
+[1.601s] running install_egg_info
+[1.601s] removing '/home/russell/sim_ws/install/arbiter/lib/python3.8/site-packages/arbiter-0.0.0-py3.8.egg-info' (and everything under it)
+[1.601s] Copying ../../build/arbiter/arbiter.egg-info to /home/russell/sim_ws/install/arbiter/lib/python3.8/site-packages/arbiter-0.0.0-py3.8.egg-info
+[1.601s] running install_scripts
+[1.601s] Installing arb_node script to /home/russell/sim_ws/install/arbiter/lib/arbiter
+[1.601s] writing list of installed files to '/home/russell/sim_ws/build/arbiter/install.log'
+[1.727s] Invoked command in '/home/russell/sim_ws/src/arbiter' returned '0': PYTHONPATH=/home/russell/sim_ws/build/arbiter/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/russell/sim_ws/install/arbiter/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/arbiter build --build-base /home/russell/sim_ws/build/arbiter/build install --record /home/russell/sim_ws/build/arbiter/install.log --install-scripts $base/lib/arbiter --single-version-externally-managed install_data

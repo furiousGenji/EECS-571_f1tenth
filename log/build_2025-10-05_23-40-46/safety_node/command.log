@@ -1,4 +1,0 @@
-Invoking command in '/home/russell/sim_ws/build/safety_node': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/russell/sim_ws/build/safety_node -- -j3 -l3
-Invoked command in '/home/russell/sim_ws/build/safety_node' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/russell/sim_ws/build/safety_node -- -j3 -l3
-Invoking command in '/home/russell/sim_ws/build/safety_node': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/russell/sim_ws/build/safety_node
-Invoked command in '/home/russell/sim_ws/build/safety_node' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/russell/sim_ws/build/safety_node

@@ -1,4 +1,0 @@
-Invoking command in '/home/russell/sim_ws/build/sim_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/russell/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy /usr/bin/cmake --build /home/russell/sim_ws/build/sim_bringup -- -j3 -l3
-Invoked command in '/home/russell/sim_ws/build/sim_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/russell/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy /usr/bin/cmake --build /home/russell/sim_ws/build/sim_bringup -- -j3 -l3
-Invoking command in '/home/russell/sim_ws/build/sim_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/russell/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy /usr/bin/cmake --install /home/russell/sim_ws/build/sim_bringup
-Invoked command in '/home/russell/sim_ws/build/sim_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/russell/sim_ws/install/f1tenth_gym_ros:/opt/ros/foxy /usr/bin/cmake --install /home/russell/sim_ws/build/sim_bringup

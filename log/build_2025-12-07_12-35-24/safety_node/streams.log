@@ -1,0 +1,28 @@
+[0.067s] Invoking command in '/home/russell/sim_ws/build/safety_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/russell/sim_ws/install/mlp_controller:/home/russell/sim_ws/install/f1tenth_gym_ros:/home/russell/sim_ws/install/data_collector:/home/russell/sim_ws/install/arbiter:/opt/ros/foxy /usr/bin/cmake --build /home/russell/sim_ws/build/safety_node -- -j3 -l3
+[0.276s] [100%] Built target safety_node
+[0.328s] Invoked command in '/home/russell/sim_ws/build/safety_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/russell/sim_ws/install/mlp_controller:/home/russell/sim_ws/install/f1tenth_gym_ros:/home/russell/sim_ws/install/data_collector:/home/russell/sim_ws/install/arbiter:/opt/ros/foxy /usr/bin/cmake --build /home/russell/sim_ws/build/safety_node -- -j3 -l3
+[0.333s] Invoking command in '/home/russell/sim_ws/build/safety_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/russell/sim_ws/install/mlp_controller:/home/russell/sim_ws/install/f1tenth_gym_ros:/home/russell/sim_ws/install/data_collector:/home/russell/sim_ws/install/arbiter:/opt/ros/foxy /usr/bin/cmake --install /home/russell/sim_ws/build/safety_node
+[0.364s] -- Install configuration: ""
+[0.365s] -- Up-to-date: /home/russell/sim_ws/install/safety_node/lib/safety_node/safety_node
+[0.367s] -- Up-to-date: /home/russell/sim_ws/install/safety_node/share/safety_node/environment/pythonpath.sh
+[0.367s] -- Up-to-date: /home/russell/sim_ws/install/safety_node/share/safety_node/environment/pythonpath.dsv
+[0.368s] -- Up-to-date: /home/russell/sim_ws/install/safety_node/lib/python3.8/site-packages/safety_node
+[0.368s] -- Up-to-date: /home/russell/sim_ws/install/safety_node/lib/python3.8/site-packages/safety_node/__init__.py
+[0.459s] Listing '/home/russell/sim_ws/install/safety_node/lib/python3.8/site-packages/safety_node'...
+[0.474s] -- Up-to-date: /home/russell/sim_ws/install/safety_node/lib/safety_node/safety_node.py
+[0.492s] -- Up-to-date: /home/russell/sim_ws/install/safety_node/share/ament_index/resource_index/package_run_dependencies/safety_node
+[0.492s] -- Up-to-date: /home/russell/sim_ws/install/safety_node/share/ament_index/resource_index/parent_prefix_path/safety_node
+[0.492s] -- Up-to-date: /home/russell/sim_ws/install/safety_node/share/safety_node/environment/ament_prefix_path.sh
+[0.492s] -- Up-to-date: /home/russell/sim_ws/install/safety_node/share/safety_node/environment/ament_prefix_path.dsv
+[0.492s] -- Up-to-date: /home/russell/sim_ws/install/safety_node/share/safety_node/environment/path.sh
+[0.492s] -- Up-to-date: /home/russell/sim_ws/install/safety_node/share/safety_node/environment/path.dsv
+[0.492s] -- Up-to-date: /home/russell/sim_ws/install/safety_node/share/safety_node/local_setup.bash
+[0.492s] -- Up-to-date: /home/russell/sim_ws/install/safety_node/share/safety_node/local_setup.sh
+[0.492s] -- Up-to-date: /home/russell/sim_ws/install/safety_node/share/safety_node/local_setup.zsh
+[0.493s] -- Up-to-date: /home/russell/sim_ws/install/safety_node/share/safety_node/local_setup.dsv
+[0.493s] -- Installing: /home/russell/sim_ws/install/safety_node/share/safety_node/package.dsv
+[0.493s] -- Up-to-date: /home/russell/sim_ws/install/safety_node/share/ament_index/resource_index/packages/safety_node
+[0.493s] -- Up-to-date: /home/russell/sim_ws/install/safety_node/share/safety_node/cmake/safety_nodeConfig.cmake
+[0.496s] -- Up-to-date: /home/russell/sim_ws/install/safety_node/share/safety_node/cmake/safety_nodeConfig-version.cmake
+[0.496s] -- Up-to-date: /home/russell/sim_ws/install/safety_node/share/safety_node/package.xml
+[0.519s] Invoked command in '/home/russell/sim_ws/build/safety_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/russell/sim_ws/install/mlp_controller:/home/russell/sim_ws/install/f1tenth_gym_ros:/home/russell/sim_ws/install/data_collector:/home/russell/sim_ws/install/arbiter:/opt/ros/foxy /usr/bin/cmake --install /home/russell/sim_ws/build/safety_node

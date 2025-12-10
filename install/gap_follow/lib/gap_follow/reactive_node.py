@@ -4,7 +4,9 @@ from rclpy.node import Node
 
 import numpy as np
 import math
+import time
 from sensor_msgs.msg import LaserScan
+from nav_msgs.msg import Odometry
 from ackermann_msgs.msg import AckermannDriveStamped, AckermannDrive
 
 class ReactiveFollowGap(Node):
@@ -23,6 +25,16 @@ class ReactiveFollowGap(Node):
         # Publish to drive
         self.drive_publisher_ = self.create_publisher(AckermannDriveStamped, drive_topic, 10)
 
+        self.odom_subscriber = self.create_subscription(Odometry, "/ego_racecar/odom", self.odom_callback, 10)
+
+        self.start_line_x = -3.85         
+          
+        self.crossing_ready = True       
+        self.prev_x = None
+        self.prev_y = None
+        self.lap_start_time = None
+        self.lap_count = 0
+
         self.max_range_clip = 8.0
         self.movavg_window = 5
         self.bubble_points = 40 #40 
@@ -35,8 +47,55 @@ class ReactiveFollowGap(Node):
         self.max_steer = math.radians(90)
         self.fov = 180.0
         self.fov_min_id = 0.0
-        # self.disp_thresh = 0.5
-        # self.extend_bubble_radius = 30
+
+        self.disp_thresh = 0.35
+        self.car_half_width = 0.22
+
+        self.total_compute_time = 0
+        self.compute_count = 0
+
+
+    def odom_callback(self, msg):
+        """
+        Detect when the car crosses the start/finish line and compute lap time.
+        """
+        x = msg.pose.pose.position.x
+        y = msg.pose.pose.position.y
+
+        if self.prev_x is None:
+            self.prev_x = x
+            self.prev_y = y
+            return
+
+        crossed = (
+            self.prev_x < self.start_line_x <= x and
+            y < 0.82 and y > -1
+        )
+
+        if crossed and self.crossing_ready:
+            now = time.time()
+
+            if self.lap_start_time is None:
+                self.lap_start_time = now
+                self.get_logger().info("Lap timer started!")
+            else:
+                lap_time = now - self.lap_start_time
+                self.lap_count += 1
+
+                self.get_logger().info(
+                    f"Lap {self.lap_count} completed! Time = {lap_time:.3f} sec"
+                )
+
+                # Reset timer for next lap
+                self.lap_start_time = now
+
+            self.crossing_ready = False
+
+        if abs(x - self.start_line_x) > 0.5:
+            self.crossing_ready = True
+
+        self.prev_x = x
+        self.prev_y = y
 
 
     def preprocess_lidar(self, ranges, angle_min, angle_max, angle_increment):
@@ -44,7 +103,6 @@ class ReactiveFollowGap(Node):
             1.Setting each value to the mean over some window
             2.Rejecting high values (eg. > 3m)
         """
-        # proc_ranges = ranges
         arr = np.array(ranges)
 
         # i=0
@@ -86,57 +144,52 @@ class ReactiveFollowGap(Node):
 
         return arr
 
-
-    def disparity_extend(self, free_space_ranges, disp_thresh, angle_increment, car_half_width=0.22):
-
-        length = len(free_space_ranges)
-        for i in range(length - 1):
-            d1, d2 = free_space_ranges[i], free_space_ranges[i + 1]
-            if d1 <= 0.0 or d2 <= 0.0:
-                continue
-            if abs(d1 - d2) > disp_thresh:
-                
-                # dnear = min(d1, d2)
-                # theta = math.atan2(car_half_width, max(dnear, 0.05))
-                # k = int(max(1, math.ceil(theta / angle_increment)))
-                k = 10
-                if d1 < d2:
-                    free_space_ranges[max(0, i - k + 1): i + 1] = 0.0
-                else:
-                    free_space_ranges[i + 1: min(length, i + 1 + k)] = 0.0
-        return free_space_ranges
-    
-
     def find_max_gap(self, free_space_ranges):
         """ Return the start index & end index of the max gap in free_space_ranges
         """
-        best_len = 0
-        best_start = 0
-        best_end = -1
+        # best_len = 0
+        # best_start = 0
+        # best_end = -1
 
-        i = 0
-        while i < len(free_space_ranges):
+        # i = 0
+        # while i < len(free_space_ranges):
             
-            while i < len(free_space_ranges) and free_space_ranges[i] <= 0:
-                i += 1
+        #     while i < len(free_space_ranges) and free_space_ranges[i] <= 0:
+        #         i += 1
 
-            if i >= len(free_space_ranges):
-                break
+        #     if i >= len(free_space_ranges):
+        #         break
 
-            start = i
+        #     start = i
 
-            while i < len(free_space_ranges) and free_space_ranges[i] > 0:
-                i += 1
+        #     while i < len(free_space_ranges) and free_space_ranges[i] > 0:
+        #         i += 1
             
-            end = i - 1
+        #     end = i - 1
 
-            gap_len = end - start + 1
-            if gap_len > best_len:
-                best_len = gap_len
-                best_start = start
-                best_end = end 
+        #     gap_len = end - start + 1
+        #     if gap_len > best_len:
+        #         best_len = gap_len
+        #         best_start = start
+        #         best_end = end 
 
-        return best_start, best_end
+        # return best_start, best_end
+
+        valid = free_space_ranges > 0.0
+        if not np.any(valid):
+            return 0, max(0, len(free_space_ranges) - 1)
+
+        edges = np.diff(valid.astype(np.int8))
+        starts = np.where(edges == 1)[0] + 1
+        ends   = np.where(edges == -1)[0]
+        if valid[0]:
+            starts = np.r_[0, starts]
+        if valid[-1]:
+            ends = np.r_[ends, len(valid) - 1]
+
+        lengths = ends - starts + 1
+        best = int(np.argmax(lengths))
+        return int(starts[best]), int(ends[best])
 
 
     def find_best_point(self, start_i, end_i, ranges):
@@ -145,9 +198,6 @@ class ReactiveFollowGap(Node):
 	    Naive: Choose the furthest point within ranges and go there
         """
         segment = ranges[start_i:end_i + 1]
-
-        # local_idx = int(np.argmax(segment))
-        # return start_i + local_idx
 
         if segment.size == 0:
             return (start_i + end_i) // 2
@@ -162,21 +212,17 @@ class ReactiveFollowGap(Node):
         local_idx = int(np.argmax(score))
         return start_i + local_idx
 
-    # def extend_bubble(self, arr, start_i, end_i):
-
-    #     left = max(0, start_i - self.extend_bubble_radius)
-    #     right = min(len(arr) - 1, end_i + self.extend_bubble_radius)
-    #     arr[left:right + 1] = 0.0
-    #     return arr
-
 
     def lidar_callback(self, data):
         """ Process each LiDAR scan as per the Follow Gap algorithm & publish an AckermannDriveStamped Message
         """
+
+        # t0 = time.perf_counter()
+
         ranges = data.ranges
         proc_ranges = self.preprocess_lidar(ranges, data.angle_min, data.angle_max, data.angle_increment)
 
-        num_scan = len(proc_ranges)
+        # num_scan = len(proc_ranges)
         # self.get_logger().info(f"num_scan={num_scan}")
         
         #1. Find closest point to LiDAR
@@ -195,21 +241,15 @@ class ReactiveFollowGap(Node):
         free_space = proc_ranges.copy()
         free_space[left:right + 1] = 0.0 
 
-        #Extend the bubble range
-        # free_space = self.extend_bubble(free_space, left, right)
-        
-
         # i=0
         # for val in free_space:
         #     self.get_logger().info(f"free_space[{i}]={val}")
         #     i += 1
 
-        # self.disparity_extend(free_space, self.disp_thresh, data.angle_increment, 0.22)
-
-        #3. Find max length gap 
+        #4. Find max length gap 
         gap_start, gap_end = self.find_max_gap(free_space)
 
-        #4. Find the best point in the gap 
+        #5. Find the best point in the gap 
         best_idx = self.find_best_point(gap_start, gap_end, free_space)
 
         steer = data.angle_min + (self.fov_min_id + best_idx) * data.angle_increment
@@ -222,9 +262,6 @@ class ReactiveFollowGap(Node):
         # self.get_logger().info(f"Central range={data.ranges[540]:+.1f}")
         # self.get_logger().info(f"closest_dist={closest_dist:+.1f}, best_idx={best_idx}, best_range={data.ranges[best_idx + self.fov_min_id]}, steer={math.degrees(steer):+.1f}°\n")
 
-        # if(closest_dist < 0.6):
-        #     speed = 0.5
-        # else:
         if steer_deg < self.small_turn_deg:
             speed = self.speed_hi
         elif steer_deg < self.mid_turn_deg:
@@ -236,12 +273,25 @@ class ReactiveFollowGap(Node):
         
         self.publish_drive(steer, speed)
 
+        # t1 = time.perf_counter()
+        # dt = t1 - t0 
+
+        # self.total_compute_time += dt
+        # self.compute_count += 1
+
+        # if self.compute_count % 5000 == 0:
+        #     avg_ms = (self.total_compute_time / self.compute_count) * 1000.0
+            # self.get_logger().info(f"Average compute time = {avg_ms:.3f} ms/step")
+
 
     def publish_drive(self, steering_angle_rad, speed):
 
         msg = AckermannDriveStamped()
 
         msg.drive.steering_angle = steering_angle_rad
+
+        # self.get_logger().info(f"speed={speed}")
+
         msg.drive.speed = speed
         self.drive_publisher_.publish(msg)
 

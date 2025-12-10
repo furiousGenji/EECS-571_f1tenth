@@ -1,0 +1,37 @@
+[2.384s] Invoking command in '/home/russell/sim_ws/src/arbiter': PYTHONPATH=/home/russell/sim_ws/build/arbiter/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/russell/sim_ws/install/arbiter/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/arbiter build --build-base /home/russell/sim_ws/build/arbiter/build install --record /home/russell/sim_ws/build/arbiter/install.log --install-scripts $base/lib/arbiter --single-version-externally-managed install_data
+[3.380s] running egg_info
+[3.386s] creating ../../build/arbiter/arbiter.egg-info
+[3.386s] writing ../../build/arbiter/arbiter.egg-info/PKG-INFO
+[3.388s] writing dependency_links to ../../build/arbiter/arbiter.egg-info/dependency_links.txt
+[3.388s] writing entry points to ../../build/arbiter/arbiter.egg-info/entry_points.txt
+[3.389s] writing requirements to ../../build/arbiter/arbiter.egg-info/requires.txt
+[3.389s] writing top-level names to ../../build/arbiter/arbiter.egg-info/top_level.txt
+[3.389s] writing manifest file '../../build/arbiter/arbiter.egg-info/SOURCES.txt'
+[3.470s] reading manifest file '../../build/arbiter/arbiter.egg-info/SOURCES.txt'
+[3.470s] writing manifest file '../../build/arbiter/arbiter.egg-info/SOURCES.txt'
+[3.471s] running build
+[3.471s] running build_py
+[3.472s] creating /home/russell/sim_ws/build/arbiter/build
+[3.472s] creating /home/russell/sim_ws/build/arbiter/build/lib
+[3.472s] creating /home/russell/sim_ws/build/arbiter/build/lib/arbiter
+[3.472s] copying arbiter/__init__.py -> /home/russell/sim_ws/build/arbiter/build/lib/arbiter
+[3.472s] copying arbiter/arb_node.py -> /home/russell/sim_ws/build/arbiter/build/lib/arbiter
+[3.472s] running install
+[3.490s] running install_lib
+[3.491s] creating /home/russell/sim_ws/install/arbiter/lib/python3.8/site-packages/arbiter
+[3.493s] copying /home/russell/sim_ws/build/arbiter/build/lib/arbiter/__init__.py -> /home/russell/sim_ws/install/arbiter/lib/python3.8/site-packages/arbiter
+[3.493s] copying /home/russell/sim_ws/build/arbiter/build/lib/arbiter/arb_node.py -> /home/russell/sim_ws/install/arbiter/lib/python3.8/site-packages/arbiter
+[3.494s] byte-compiling /home/russell/sim_ws/install/arbiter/lib/python3.8/site-packages/arbiter/__init__.py to __init__.cpython-38.pyc
+[3.501s] byte-compiling /home/russell/sim_ws/install/arbiter/lib/python3.8/site-packages/arbiter/arb_node.py to arb_node.cpython-38.pyc
+[3.501s] running install_data
+[3.501s] creating /home/russell/sim_ws/install/arbiter/share/ament_index
+[3.501s] creating /home/russell/sim_ws/install/arbiter/share/ament_index/resource_index
+[3.501s] creating /home/russell/sim_ws/install/arbiter/share/ament_index/resource_index/packages
+[3.501s] copying resource/arbiter -> /home/russell/sim_ws/install/arbiter/share/ament_index/resource_index/packages
+[3.501s] copying package.xml -> /home/russell/sim_ws/install/arbiter/share/arbiter
+[3.502s] running install_egg_info
+[3.527s] Copying ../../build/arbiter/arbiter.egg-info to /home/russell/sim_ws/install/arbiter/lib/python3.8/site-packages/arbiter-0.0.0-py3.8.egg-info
+[3.538s] running install_scripts
+[3.593s] Installing arb_node script to /home/russell/sim_ws/install/arbiter/lib/arbiter
+[3.605s] writing list of installed files to '/home/russell/sim_ws/build/arbiter/install.log'
+[3.723s] Invoked command in '/home/russell/sim_ws/src/arbiter' returned '0': PYTHONPATH=/home/russell/sim_ws/build/arbiter/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/russell/sim_ws/install/arbiter/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/arbiter build --build-base /home/russell/sim_ws/build/arbiter/build install --record /home/russell/sim_ws/build/arbiter/install.log --install-scripts $base/lib/arbiter --single-version-externally-managed install_data

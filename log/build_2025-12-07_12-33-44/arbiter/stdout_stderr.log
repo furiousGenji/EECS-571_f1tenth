@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/arbiter/arbiter.egg-info/PKG-INFO
+writing dependency_links to ../../build/arbiter/arbiter.egg-info/dependency_links.txt
+writing entry points to ../../build/arbiter/arbiter.egg-info/entry_points.txt
+writing requirements to ../../build/arbiter/arbiter.egg-info/requires.txt
+writing top-level names to ../../build/arbiter/arbiter.egg-info/top_level.txt
+reading manifest file '../../build/arbiter/arbiter.egg-info/SOURCES.txt'
+writing manifest file '../../build/arbiter/arbiter.egg-info/SOURCES.txt'
+running build
+running build_py
+copying arbiter/arb_node.py -> /home/russell/sim_ws/build/arbiter/build/lib/arbiter
+running install
+running install_lib
+copying /home/russell/sim_ws/build/arbiter/build/lib/arbiter/arb_node.py -> /home/russell/sim_ws/install/arbiter/lib/python3.8/site-packages/arbiter
+byte-compiling /home/russell/sim_ws/install/arbiter/lib/python3.8/site-packages/arbiter/arb_node.py to arb_node.cpython-38.pyc
+running install_data
+running install_egg_info
+removing '/home/russell/sim_ws/install/arbiter/lib/python3.8/site-packages/arbiter-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../../build/arbiter/arbiter.egg-info to /home/russell/sim_ws/install/arbiter/lib/python3.8/site-packages/arbiter-0.0.0-py3.8.egg-info
+running install_scripts
+Installing arb_node script to /home/russell/sim_ws/install/arbiter/lib/arbiter
+writing list of installed files to '/home/russell/sim_ws/build/arbiter/install.log'

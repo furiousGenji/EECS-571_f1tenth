@@ -1,0 +1,3 @@
+[console_scripts]
+mlp_node = mlp_controller.mlp_node:main
+

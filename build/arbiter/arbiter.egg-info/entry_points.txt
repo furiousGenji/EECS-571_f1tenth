@@ -1,0 +1,3 @@
+[console_scripts]
+arb_node = arbiter.arb_node:main
+

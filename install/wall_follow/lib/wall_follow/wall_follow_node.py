@@ -85,12 +85,12 @@ class WallFollow(Node):
         b_left = self.get_range(range_data, angle_b_left)
         
 
-        self.get_logger().info(f"a_left={a_left:+.3f} | b_left={b_left:+.3f}")
+        # self.get_logger().info(f"a_left={a_left:+.3f} | b_left={b_left:+.3f}")
 
         alpha_left = np.arctan2(abs(a_left * np.cos(theta) - b_left), a_left * np.sin(theta))
         D_t_left = b_left * np.cos(alpha_left)
 
-        self.get_logger().info(f"D_t_left={D_t_left:+.3f} | alpha_left={alpha_left:+.3f}")
+        # self.get_logger().info(f"D_t_left={D_t_left:+.3f} | alpha_left={alpha_left:+.3f}")
 
         D_t1_left = D_t_left + self.lookahead_distance * np.sin(alpha_left)
 
@@ -173,11 +173,11 @@ class WallFollow(Node):
         abs_angle_deg = abs(np.rad2deg(angle))
 
         if abs_angle_deg < 10:
-            speed = 1.5
+            speed = 1.8
         elif abs_angle_deg < 20:
-            speed = 1.0
+            speed = 1.2
         else:
-            speed = 0.5
+            speed = 0.8
 
         speed = min(speed, velocity)
 
@@ -187,7 +187,7 @@ class WallFollow(Node):
         drive_msg.drive.speed = speed
         self.drive_publisher_.publish(drive_msg)
 
-        self.get_logger().info(f"err={error:+.3f} | steer={np.rad2deg(angle):+.2f}° | speed={speed:.2f}")
+        # self.get_logger().info(f"err={error:+.3f} | steer={np.rad2deg(angle):+.2f}° | speed={speed:.2f}")
 
     def scan_callback(self, msg):
         """
@@ -199,7 +199,7 @@ class WallFollow(Node):
         Returns:
             None
         """
-        self.get_logger().info(f"Start: Scan_callback")
+        # self.get_logger().info(f"Start: Scan_callback")
 
         self.angle_min = msg.angle_min
         self.angle_increment = msg.angle_increment
@@ -215,12 +215,12 @@ class WallFollow(Node):
 
         # Get range data
         range_data = np.array(msg.ranges)
-        self.get_logger().info(f"Scan_callback: Get range")
+        # self.get_logger().info(f"Scan_callback: Get range")
 
         error = self.get_error(range_data, self.desired_distance) 
-        self.get_logger().info(f"Scan_callback: Get error = {error:+.3f}")
+        # self.get_logger().info(f"Scan_callback: Get error = {error:+.3f}")
 
-        velocity = 1.5 
+        velocity = 3.0 
         self.pid_control(error, velocity)
 
 

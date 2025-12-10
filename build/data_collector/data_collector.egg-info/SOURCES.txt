@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/data_collector/data_collector.egg-info/PKG-INFO
+../../build/data_collector/data_collector.egg-info/SOURCES.txt
+../../build/data_collector/data_collector.egg-info/dependency_links.txt
+../../build/data_collector/data_collector.egg-info/entry_points.txt
+../../build/data_collector/data_collector.egg-info/requires.txt
+../../build/data_collector/data_collector.egg-info/top_level.txt
+../../build/data_collector/data_collector.egg-info/zip-safe
+data_collector/__init__.py
+data_collector/data_logger.py
+resource/data_collector
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py
